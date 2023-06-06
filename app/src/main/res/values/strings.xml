@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weixin_UI</string>
+    <string name="friends" />
+    <string name="me" />
+</resources>

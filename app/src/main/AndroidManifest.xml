@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Weixin_UI"
+        tools:targetApi="31">
+        <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Friend_message"
+            android:exported="true" />
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:label="模拟登录">
+            <intent-filter>
+                <action android:name="login1111" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Friends"
+            android:exported="true"
+            android:label="模拟好友栏">
+            <intent-filter>
+                <action android:name="friends" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mymessage"
+            android:exported="true"
+            android:label="模拟微信我的信息">
+            <intent-filter>
+                <action android:name="mymessage" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:exported="true"
+            android:label="模拟微信主页">
+            <intent-filter>
+                <action android:name="home" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Regist"
+            android:exported="true"
+            android:label="模拟微信注册">
+            <intent-filter>
+                <action android:name="regist" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="模拟微信登录">
+            <intent-filter>
+
+                <!-- <action android:name="Main" /> -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
