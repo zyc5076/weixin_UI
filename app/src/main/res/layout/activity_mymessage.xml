@@ -53,24 +53,30 @@
             android:textSize="20dp"
             android:text="出生日期："/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:layout_marginTop="100dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#5e6891"
+            android:layout_marginTop="130dp"
             android:layout_gravity="center"
             android:text="强制下线"
             android:id="@+id/xiaxian"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#5e6891"
             android:layout_gravity="center"
             android:text="查询天气"
             android:id="@+id/tianqi"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:backgroundTint="#ffffff"
+            android:textColor="#5e6891"
             android:layout_gravity="center"
             android:text="退出登录"
             android:id="@+id/exit"/>

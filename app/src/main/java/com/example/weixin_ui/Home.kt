@@ -55,31 +55,6 @@ class Home : BaseActivity() {
             startActivityForResult(intent,888)
         }
     }
-    //更新信息和好友列表
-//    private fun loadFriendList(username:String): List<ChatFriendList> {
-//        val friendList = mutableListOf<ChatFriendList>()
-//        // 查询好友列表
-//        val friendsQuery = "SELECT users.username FROM friends JOIN users ON friends.friend_id = users.id WHERE friends.user_id = ?"
-//        val friendsCursor = db.rawQuery(friendsQuery, arrayOf(currentUserId.toString()))
-//        while (friendsCursor.moveToNext()) {
-//            val friendName = friendsCursor.getString(0)
-//            // 查询最后一条聊天记录
-//            val messageQuery = "SELECT message, timestamp FROM messages WHERE (sender = ? AND receiver = ?) OR (sender = ? AND receiver = ?) ORDER BY timestamp DESC LIMIT 1"
-//            val messageArgs = arrayOf(username, friendName, friendName, username)
-//            val messageCursor = db.rawQuery(messageQuery, messageArgs)
-//            var message: String? = null
-//            var timestamp: String? = null
-//            if (messageCursor.moveToFirst()) {
-//                message = messageCursor.getString(0)
-//                timestamp = messageCursor.getString(1)
-//            }
-//            messageCursor.close()
-//            val chatFriend = ChatFriendList(friendName, message ?: "", timestamp ?: "")
-//            friendList.add(chatFriend)
-//        }
-//        friendsCursor.close()
-//        return friendList
-//    }
 
     private fun loadFriendList(username: String): List<ChatFriendList> {
         val friendList = mutableListOf<ChatFriendList>()

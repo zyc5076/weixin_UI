@@ -106,7 +106,8 @@ class Mymessage : BaseActivity() {
         //查询天气
         val tianqi=findViewById<Button>(R.id.tianqi)
         tianqi.setOnClickListener{
+            val intent = Intent(this, weather::class.java)
+            startActivity(intent)
         }
-
     }
 }

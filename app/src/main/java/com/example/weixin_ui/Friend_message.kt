@@ -47,6 +47,13 @@ class Friend_message : AppCompatActivity() {
         }
         cursor.close()
         db.close()
+        val sendmessage=findViewById<Button>(R.id.send_message)
+        sendmessage.setOnClickListener {
+            // 从当前用户跳转到聊天界面，传递好友名称作为参数
+            val intent = Intent(this, Chat::class.java)
+            intent.putExtra("FriendName", FriendName)
+            startActivity(intent)
+        }
         //删除好友
         val delete=findViewById<Button>(R.id.delete_friend)
         delete.setOnClickListener {
@@ -54,7 +61,6 @@ class Friend_message : AppCompatActivity() {
             setResult(RESULT_OK)
             finish()
         }
-
     }
     //双向删除好友
     private fun deleteFriendship(userId: Long, friendId: Long) {

@@ -21,12 +21,13 @@
         android:orientation="vertical">
         <Button
             android:id="@+id/addFriend"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ffffff"
+            android:textColor="#5e6891"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:text="添加好友"/>
-
     </LinearLayout>
     <LinearLayout
         android:id="@+id/bottom"
